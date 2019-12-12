@@ -1,7 +1,7 @@
 # .circleci/config.yml
 version: 2
 jobs:
-  build-and-unit_test:
+  build-and-unit-test:
     macos:
       xcode: "11.0.0"
     environment:
