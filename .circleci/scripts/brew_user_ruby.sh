@@ -30,5 +30,5 @@ fi
 printf '%s\n%s\n%s\n' \
     "export RUBY_HOME=/usr/local/opt/ruby/bin" \
     "export GEM_HOME=$GEM_HOME" \
-    "export PATH=\$GEM_PATH/bin:\$RUBY_HOME:\$PATH" \
+    "export PATH=\$GEM_HOME/bin:\$RUBY_HOME:\$PATH" \
     >> ~/.bash_profile
