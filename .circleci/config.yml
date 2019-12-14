@@ -7,7 +7,6 @@ jobs:
     environment:
       FL_OUTPUT_DIR: output
     steps:
-      - checkout
       - run:
           name: Print Homebrew Information
           command: .circleci/scripts/print_homebrew_info.sh
@@ -20,9 +19,17 @@ jobs:
       - run:
           name: Install Cocoapods
           command: gem install cocoapods --user-install
+  ios-prebuild:
+    macos:
+      xcode: "11.0.0"
+    environment:
+      FL_OUTPUT_DIR: output
+    steps:
+      - checkout
 
 workflows:
   version: 2
   build-and-unit-test:
     jobs:
       - ios-environment-setup
+      - ios-prebuild
