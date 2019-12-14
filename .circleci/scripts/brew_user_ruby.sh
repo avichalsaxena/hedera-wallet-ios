@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -o nounset
 set -o pipefail
 if [ `which ruby` = '/usr/local/opt/ruby/bin/ruby' ] ; then
