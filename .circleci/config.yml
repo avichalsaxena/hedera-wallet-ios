@@ -1,7 +1,7 @@
 # .circleci/config.yml
 version: 2
 jobs:
-  build-and-unit-test:
+  ios-environment-setup:
     macos:
       xcode: "11.0.0"
     environment:
@@ -19,4 +19,4 @@ workflows:
   version: 2
   build-and-unit-test:
     jobs:
-      - build-and-unit-test
+      - ios-environment-setup
