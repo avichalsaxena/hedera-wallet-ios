@@ -6,4 +6,4 @@ brew install protobuf
 brew install swift-protobuf
 brew install grpc-swift
 pod install --verbose
-./gen_swift
+./gen-swift
