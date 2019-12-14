@@ -32,6 +32,6 @@ workflows:
   build-and-unit-test:
     jobs:
       - ios-environment-setup
-      - ios-prebuild
+      - ios-prebuild:
           requires:
             - ios-environment-setup
