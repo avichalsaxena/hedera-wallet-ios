@@ -33,3 +33,5 @@ workflows:
     jobs:
       - ios-environment-setup
       - ios-prebuild
+          requires:
+            - ios-environment-setup
